@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #007BFF;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5, h6 {
+    font-size: 1rem;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#projects, #skills {
+    justify-content: space-between;
+}
+
+.project-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bf4aed;
+}
+
+button,.btn {
+    background-color: #ef3d73;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,.btn:hover {
+    background-color: #3d98f9;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+   .container {
+        padding: 0 10px;
+    }
+
+    #projects, #skills {
+        flex-direction: column;
+    }
+
+   .project-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

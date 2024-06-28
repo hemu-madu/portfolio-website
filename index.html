@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Portfolio</h1>
+</header>
+<aside class="sidebar" aria-label="Contact Information" role="region" tabindex="0">
+    <div class="sidebar-info">
+        <figure class="avatar-box">
+            <img src="C:\Users\wrg\Downloads\hem pp (1).png" alt="Hemanth" width="80">
+        </figure>
+        <div class="info-content">
+            <h1 class="name" title="Hemanth Madu">Hemanth Madu</h1>
+            <p class="title">Software Developer</p>
+        </div>
+        <button class="info_more-btn" onclick="toggleContacts()" aria-expanded="false">
+            Show Contacts
+            <ion-icon name="chevron-down"></ion-icon>
+        </button>
+    </div>
+    <div class="sidebar-info_more" aria-hidden="true">
+        <ul class="contacts-list">
+            <li class="contact-item">
+                <div class="icon-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-title">Email</p>
+                    <a href="mailto:hemanthmadu6454@gmail.com" class="contact-link">hemanthmadu6454@gmail.com</a>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="icon-box">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-title">Phone</p>
+                    <a href="tel:+91 9491142102" class="contact-link">+91 9491142102</a>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="icon-box">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-title">Birthday</p>
+                    <time datetime="2004-03-14">March 14, 2004</time>
+                </div>
+            </li>
+            <li class="contact-item">
+                <div class="icon-box">
+                    <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-title">Location</p>
+                    <address>Vegiwada, Eluru, Andhra Pradesh, India</address>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+
+
+<section id="intro">
+    <h2>About me...</h2>
+    <p> I am Hemanth currently pursuing Bachelor degree in Computer Science and Engineering at Pace Institute of Technology and Sciences Ongole.
+        Proficient in Python,Java, OOPs, HTML and CSS. Keen to Pursue a career in the field of Software Engineering.
+    </p>
+    <p> Looking for a challenging role in a reputable organization to utilize my technical, database and management skills
+        for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.
+    </p>
+</section>
+<section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Education</h3>
+    </div>
+    <ul class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Bachelor of Technology(CSE)</h4>    
+        <span>2021 — 2025</span>
+        <p class="timeline-text">
+            PACE Institute of Technology & Sciences,Ongole and Current CGPA:8.5
+        </p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Intermediate</h4>       
+        <span>2019-2021</span>
+        <p class="timeline-text">Sri Chaitanya Junior College,Eluru and CGPA:8.3
+        </p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Secondary School Education</h4>
+        <span>2018 — 2019</span>
+        <p class="timeline-text">
+          Sree Bharathi High School,Eluru and CGPA:9.2
+        </p>
+      </li>
+    </ul>
+  </section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+    <!-- Project items will be dynamically added here -->
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div>
+    <ul>
+        <h4>Computer Skills</h4> Microsoft (Word, Excel & PowerPoint)
+        <h4>Programming Languages</h4> Python,C,Java(Core,Spring framework),JavaScript,NodeJs and DBMS with MySQL
+        <h4>Languages</h4> English (Fluent), Telugu(Native) and Hindi(Beginner)
+    </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
